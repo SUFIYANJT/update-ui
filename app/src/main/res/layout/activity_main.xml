@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <!-- Card for Machines -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/machineCard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="8dp">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewMachines"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/imageviewmachines"/>
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/machines"
+        android:gravity="center"
+        android:id="@+id/tMachines"
+        android:textSize="24sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/vehicleCard"/>
+    <!-- Card for Vehicles -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/vehicleCard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/machineCard"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewVehicles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/imageviewvehicles"/>
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vehicle"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:paddingStart="30dp"
+        android:layout_toEndOf="@+id/tMachines"
+        android:layout_below="@+id/vehicleCard"/>
+</RelativeLayout>

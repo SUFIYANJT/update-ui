@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="machines">Machines</string>
+    <string name="bottom_sheet_content">Bottom Sheet Content</string>
+    <string name="bottom_sheet_caontent" />
+</resources>
